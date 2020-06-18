@@ -57,7 +57,7 @@ def rabota(url, city=None, language=None):
                                  attrs={'class': 'f-vacancylist-newnotfound'})
             if not new_jobs:
                 table = soup.find('table',
-                                  id='ctl00_content_vacancyList_gridList')
+                                  id='ctl00_content_ctl00_gridList')
                 if table:
                     tr_lst = table.find_all('tr', attrs={'id': True})
                     for tr in tr_lst:
